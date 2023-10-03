@@ -1,0 +1,198 @@
+/* Reset default list styles */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Background color for the navbar */
+  display: flex; /* Use flexbox to position items */
+
+  justify-content: space-around;
+}
+
+.items-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li a {
+  display: block;
+  color: white; /* Text color for the links */
+  text-align: center;
+  padding: 14px 16px; /* Padding around the links */
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #555; /* Background color on hover */
+}
+/*chat gtp question: 
+a hero with flex-direction colum with header subheader and a button */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0074e4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 300px; /* Adjust the height as needed */
+}
+
+/* Styling for the header */
+.hero-header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the subheader */
+.hero-subheader {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the button */
+.hero-button {
+  background-color: #fff;
+  color: #0074e4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/*chatgpt question: two column layout with picture on the left and on the right a header, subhead and a paragraph*/
+
+/* Styling for the two-column layout */
+.two-column-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the left column (image) */
+.left-column {
+  flex: 1;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for the right column */
+.right-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2; /* Optional background color for the right column */
+}
+
+/* Styling for header, subheader, and paragraph */
+.right-column h2 {
+  font-size: 1.5rem;
+}
+
+.right-column h3 {
+  font-size: 1.2rem;
+  color: #0074e4; /* Custom color for subheader */
+}
+
+.right-column p {
+  font-size: 1rem;
+}
+
+/*chatgdp question: 
+a feature section with a header and 3 cards bellow that flex in a row*/
+
+/* Styling for the feature section */
+.feature-section {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Styling for the feature header */
+.feature-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the feature cards */
+.feature-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for each feature card */
+.feature-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+}
+
+/*chatgdp question: a footer with 3 column layout. 8 links in the first column. in the second column a list with contact info, mail and adress. in the third column log out button
+*/
+/* Styling for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for each footer column */
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Styling for links in the first column */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styling for the logout button in the third column */
+.logout-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
