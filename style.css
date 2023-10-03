@@ -1,11 +1,11 @@
 /* Reset default list styles */
-.navbar {
+nav {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 3px;
   background-color: #333; /* Background color for the navbar */
   display: flex; /* Use flexbox to position items */
-
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -25,6 +25,23 @@
 .navbar li a:hover {
   background-color: #555; /* Background color on hover */
 }
+
+/*cHAT GDP question:: a button with css*/
+.my-button {
+  background-color: #0074e4; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove default button border */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 1rem; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.my-button:hover {
+  background-color: #0056b3; /* Background color on hover */
+}
 /*chat gtp question: 
 a hero with flex-direction colum with header subheader and a button */
 
@@ -38,6 +55,53 @@ a hero with flex-direction colum with header subheader and a button */
   padding: 20px;
   text-align: center;
   height: 300px; /* Adjust the height as needed */
+}
+
+/* Reset default list styles */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Background color for the navbar */
+  display: flex; /* Use flexbox to position list items */
+  justify-content: space-around;
+  align-items: center; /* Vertically center items in the navbar */
+}
+
+/* Apply flex properties to list items within .navbar */
+.navbar li {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li a {
+  display: block;
+  color: white; /* Text color for the links */
+  text-align: center;
+  padding: 14px 16px; /* Padding around the links */
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #555; /* Background color on hover */
+}
+
+*/
+/* Styling for the button */
+.my-button {
+  background-color: #0074e4; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove default button border */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 1rem; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.my-button:hover {
+  background-color: #0056b3; /* Background color on hover */
 }
 
 /* Styling for the header */
@@ -128,7 +192,7 @@ a feature section with a header and 3 cards bellow that flex in a row*/
 /* Styling for the feature cards */
 .feature-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Styling for each feature card */
